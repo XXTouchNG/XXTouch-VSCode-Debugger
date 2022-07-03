@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lua",
+            "request": "launch",
+            "tag": "normal",
+            "name": "LuaPanda",
+            "description": "通用模式",
+            "cwd": "${workspaceFolder}",
+            "luaFileExtension": "lua",
+            "connectionPort": 8818,
+            "stopOnEntry": false,
+            "useCHook": true,
+            "autoPathMode": true
+        }
+    ]
+}
