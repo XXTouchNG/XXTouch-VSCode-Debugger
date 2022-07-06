@@ -289,7 +289,7 @@ class LuaDebugSession extends vscode_debugadapter_1.LoggingDebugSession {
             this._runtime.start((_, info) => {
                 this.connectionFlag = true;
                 this._server.close();
-                let connectMessage = "[Connected] VSCode 客户端已建立连接! 远程设备信息  " + socket.remoteAddress + ":" + socket.remotePort;
+                let connectMessage = "[Connected] VSCode 客户端已建立连接! 远程设备信息 " + socket.remoteAddress + ":" + socket.remotePort;
                 logManager_1.DebugLogger.AdapterInfo(connectMessage);
                 this.printLogInDebugConsole(connectMessage);
                 this.printLogInDebugConsole("[Tips] 当停止在断点处时, 可在调试控制台输入要观察变量或执行表达式. ");
